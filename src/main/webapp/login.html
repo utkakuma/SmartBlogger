@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form - Modal</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style1.css">
+      <script type="text/javascript" src="scripts/jquery-2.2.3.js"></script>
+<header> Authorization: Basic</header>
+  <script>
+  $(document).ready(function() {
+    alert ("I am working");
+    $("form").submit(function (e) {
+      alert ("call get");
+    $.get("cmad/users", function(data){
+      alert ("I am authorized");
+      window.location="viewallblogs.html";
+    });
+    });
+  });
+  </script>
+    </head>
+  <body>
+    <div id="header">
+
+          <div> <a id="title"href="http://stackoverflow.com/">CMAD Projects</a></div>
+
+        <div id="right"></div>
+        <div id="center">
+  <a id="login" href="http://www.google.com"> login </a>
+  <a id="signup" href="http://www.gmail.com"> sign up </a>
+  <input name="q" type="text" placeholder="" value="Search Q&A" tabindex="1" autocomplete="off" maxlength="240">
+</div>
+      </div>
+<!-- Form-->
+<div class="form">
+  <div class="form-toggle"></div>
+  <div class="form-panel one">
+    <div class="form-header">
+      <h1>Account Login</h1>
+    </div>
+    <div class="form-content">
+      <form>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="username" id="username" name="username" required="required"/>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required="required"/>
+        </div>
+        <div class="form-group">
+          <label class="form-remember">
+            <input type="checkbox"/>Remember Me
+          </label><a href="#" class="form-recovery">Forgot Password?</a>
+        </div>
+        <div class="form-group">
+          <button type="submit">Log In</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+  <fieldset>
+<div class="pen-footer">
+  <i class="material-icons">Don't have an account?</i>
+<a href="login.html" target="_blank">Sign Up</a></div>
+</div>
+    </fieldset>
+</body>
+</html>
