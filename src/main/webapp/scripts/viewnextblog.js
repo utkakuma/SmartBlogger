@@ -1,6 +1,5 @@
 $(document).ready(function() {
 	var id = window.location.href.slice(window.location.href.indexOf('?') + 1).split('=');
-	alert(id[1]);
 	startPoint = id[1];
 	$.ajax({
 

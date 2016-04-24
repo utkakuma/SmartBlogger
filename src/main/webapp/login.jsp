@@ -8,9 +8,7 @@
 <script type="text/javascript" src="scripts/common.js"></script>
   <script>
   $(document).ready(function() {
-    alert (" login");
     $("form").submit(function (e) {
-      alert ("call submit");
       var user = document.getElementById("username").value;
       var pwd = document.getElementById("password").value;
       var data = JSON.stringify({ email: user, password: pwd});
@@ -25,10 +23,9 @@
           data : data,
           success : function(result) {
         	  if(result != null){
-        		  alert ("I am authorized");
+        		  alert ("DONE");
         		  window.location="viewallblogs.jsp";
         	  } else {
-        		  alert ("I am not authorized");
         	  }
         	 
               //window.location="viewallblogs.jsp";
@@ -49,7 +46,7 @@
       <div class="header_resize">
 
         <div class="logo">
-          <h1><a href="index.html"><small>pagenotfound</small>CMAD<span>Blog</span></a></h1>
+          <h1><a href="index.jsp"> Smart Bloggers</a></h1>
         </div>
 
         <div class="clr"></div>
@@ -65,9 +62,8 @@
 
         <div class="menu">
           <ul>
-            <li><a href="viewallblog.html" class="active">Questions</a></li>
+            <li><a href="viewallblogs.jsp" class="active">Questions</a></li>
             <li><a href="addblog.jsp">Ask Questions</a></li>
-            <li><a href="userview.jsp"> Users </a></li>
             <li><a href="contact.html" > Contact Us</a></li>
           </ul>
         </div>
@@ -187,5 +183,5 @@
     </div>
   </div>
   <!-- END PAGE SOURCE -->
-  <div align=center>This Website Is under Development By <a href='index.jsp'>Samiksha And Utakarsh</a></div></body>
+  <div align=center>This Website Is under Development By <a href='index.jsp'>Samiksha And Utkarsh</a></div></body>
   </html>

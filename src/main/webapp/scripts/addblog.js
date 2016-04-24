@@ -1,7 +1,5 @@
 $(document).ready(function() {
-	alert("Insdie js");
         $("form").submit(function (e) {
-        	alert("Submit form");
           var titleTxt = document.getElementById("posttitle").value;
                var bodyTxt = document.getElementById("postdesc").value;
                var data = JSON.stringify({ title: titleTxt, content: bodyTxt});
@@ -13,7 +11,7 @@ $(document).ready(function() {
                  contentType: "application/json",
                  data : data,
                  success : function(result) {
-                   alert(result.success); // result is an object which is created from the returned JSON
+                   alert("DONE"); // result is an object which is created from the returned JSON
     },
 
 });

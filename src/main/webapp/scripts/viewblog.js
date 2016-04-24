@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	 alert("I am here ");
 	 var id = window.location.href.slice(window.location.href.indexOf('?') + 1).split('=');
 
 	 var data = null;

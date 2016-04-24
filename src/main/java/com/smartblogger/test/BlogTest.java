@@ -1,5 +1,19 @@
 package com.smartblogger.test;
 
+import java.util.Iterator;
+import java.util.List;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.junit.Test;
+
+import com.smartblogger.dao.BlogDAO;
+import com.smartblogger.dao.HibernateUtil;
+import com.smartblogger.model.*;
+
+
 //import static org.junit.Assert.*;
 
 //import org.junit.After;
@@ -56,7 +70,7 @@ public class BlogTest {
 
 			
 	}/**/
-	/*
+	/**/
 	@Test
 	public void testAssociation() {
 		SessionFactory sessionFactory=new Configuration().configure().buildSessionFactory();

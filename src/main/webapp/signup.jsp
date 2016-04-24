@@ -14,7 +14,6 @@
 <script type="text/javascript" src="scripts/validation.js"></script>
   <script>
   $(document).ready(function() {
-    alert (" Register");
    
       $("form").submit(function (e) {
         	var user = document.getElementById("username").value;
@@ -33,7 +32,7 @@
             contentType: "application/json",
             data : data,
             success : function(result) {
-          		  alert ("I am registered");
+          		  alert ("DONE");
           		  window.location="login.jsp";
           	  
   },
@@ -55,7 +54,7 @@
       <div class="header_resize">
 
         <div class="logo">
-          <h1><a href="index.html"><small>pagenotfound</small>CMAD<span>Blog</span></a></h1>
+          <h1><a href="index.jsp"> Smart Bloggers</a></h1>
         </div>
 
         <div class="clr"></div>
@@ -71,9 +70,8 @@
 
         <div class="menu">
           <ul>
-            <li><a href="viewallblog.html" class="active">Questions</a></li>
+            <li><a href="viewallblogs.jsp" class="active">Questions</a></li>
             <li><a href="addblog.jsp">Ask Questions</a></li>
-            <li><a href="userview.jsp"> Users </a></li>
             <li><a href="contact.html" > Contact Us</a></li>
           </ul>
         </div>

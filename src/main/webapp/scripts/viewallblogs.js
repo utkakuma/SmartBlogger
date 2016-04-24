@@ -1,9 +1,7 @@
 $(document).ready(function() {
-	 alert("I am here ");
 	 var id = window.location.href.slice(window.location.href.indexOf('?') + 1).split('=');
 		
 		if (typeof id[1] === "undefined") {
-			alert (" I am not defined");
 		} else {
 			startPoint = id[1];
 		}
